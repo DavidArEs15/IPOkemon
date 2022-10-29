@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MSI</Machine>
+    <WindowsUser>david</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>2bebcd26-3beb-4ff7-b205-240b8f57ae0b</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Isabel Gonzalez</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\Lab5.exe">
+      <PackagePath>entrypoint\Lab5.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\.nuget\packages\microsoft.toolkit.uwp.notifications\7.1.2\lib\uap10.0.16299\Microsoft.Toolkit.Uwp.Notifications.dll">
+      <PackagePath>Microsoft.Toolkit.Uwp.Notifications.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.13\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\102-1021879_iconos-y-figuras-de-amor-icono-de-corazon-removebg-preview.png">
+      <PackagePath>imagenesCastform\102-1021879_iconos-y-figuras-de-amor-icono-de-corazon-removebg-preview.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\castform.png">
+      <PackagePath>imagenesCastform\castform.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\castformEvolucionNoF.png">
+      <PackagePath>imagenesCastform\castformEvolucionNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\castformGanar.png">
+      <PackagePath>imagenesCastform\castformGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\castformGanar2.png">
+      <PackagePath>imagenesCastform\castformGanar2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\castformNoF.png">
+      <PackagePath>imagenesCastform\castformNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\escudo.png">
+      <PackagePath>imagenesCastform\escudo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\fondoCastform.png">
+      <PackagePath>imagenesCastform\fondoCastform.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\fondoCastform2.png">
+      <PackagePath>imagenesCastform\fondoCastform2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\ganaCastform.png">
+      <PackagePath>imagenesCastform\ganaCastform.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\new_fondo.PNG">
+      <PackagePath>imagenesCastform\new_fondo.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\piedraGris_evNoF.png">
+      <PackagePath>imagenesCastform\piedraGris_evNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\pngwing.com.png">
+      <PackagePath>imagenesCastform\pngwing.com.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\Corazón.png">
+      <PackagePath>imagenesOso\Corazón.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\escudoNoF.png">
+      <PackagePath>imagenesOso\escudoNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\espada.png">
+      <PackagePath>imagenesOso\espada.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\espadaNoF.png">
+      <PackagePath>imagenesOso\espadaNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\espiral.png">
+      <PackagePath>imagenesOso\espiral.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\espiralNoF.png">
+      <PackagePath>imagenesOso\espiralNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\fondoTeddiursa.png">
+      <PackagePath>imagenesOso\fondoTeddiursa.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\fuego.png">
+      <PackagePath>imagenesOso\fuego.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\fuegoNoF.png">
+      <PackagePath>imagenesOso\fuegoNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\garras.png">
+      <PackagePath>imagenesOso\garras.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\garrasNoF.png">
+      <PackagePath>imagenesOso\garrasNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\miel.png">
+      <PackagePath>imagenesOso\miel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\miel2.png">
+      <PackagePath>imagenesOso\miel2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\oso.png">
+      <PackagePath>imagenesOso\oso.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\osoEvolucionNoF.png">
+      <PackagePath>imagenesOso\osoEvolucionNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\osoNoF.png">
+      <PackagePath>imagenesOso\osoNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\piedraOso_evNoF.png">
+      <PackagePath>imagenesOso\piedraOso_evNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\pocimaNoF.png">
+      <PackagePath>imagenesOso\pocimaNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\reintentarNoF.png">
+      <PackagePath>imagenesOso\reintentarNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\teddiursaGanar.png">
+      <PackagePath>imagenesOso\teddiursaGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\xRoja.png">
+      <PackagePath>imagenesOso\xRoja.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\xRojaNoF.png">
+      <PackagePath>imagenesOso\xRojaNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\corazon2.png">
+      <PackagePath>imagenesPinguino\corazon2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\emoticonoHerido2.png">
+      <PackagePath>imagenesPinguino\emoticonoHerido2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\escudo3.png">
+      <PackagePath>imagenesPinguino\escudo3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\fondoPiplup.png">
+      <PackagePath>imagenesPinguino\fondoPiplup.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\fondoPiplup2.png">
+      <PackagePath>imagenesPinguino\fondoPiplup2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\ganaPiplup.png">
+      <PackagePath>imagenesPinguino\ganaPiplup.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\piedraPinguino_evNoF.png">
+      <PackagePath>imagenesPinguino\piedraPinguino_evNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\piplup.png">
+      <PackagePath>imagenesPinguino\piplup.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\piplupEvolucionNoF.png">
+      <PackagePath>imagenesPinguino\piplupEvolucionNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\piplupGanar.png">
+      <PackagePath>imagenesPinguino\piplupGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\piplupNoF.png">
+      <PackagePath>imagenesPinguino\piplupNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\pocima3.png">
+      <PackagePath>imagenesPinguino\pocima3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\corazonPokemon.png">
+      <PackagePath>imagenesSableye\corazonPokemon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\enfado.png">
+      <PackagePath>imagenesSableye\enfado.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\escudopokemon.png">
+      <PackagePath>imagenesSableye\escudopokemon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\fondoSableye.png">
+      <PackagePath>imagenesSableye\fondoSableye.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\ganaSableye.png">
+      <PackagePath>imagenesSableye\ganaSableye.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\piedraMorado_evNoF.png">
+      <PackagePath>imagenesSableye\piedraMorado_evNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\pociondevidaPokemon.png">
+      <PackagePath>imagenesSableye\pociondevidaPokemon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\pokebola.png">
+      <PackagePath>imagenesSableye\pokebola.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\sableye.png">
+      <PackagePath>imagenesSableye\sableye.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\sableyeEvolucionNoF.png">
+      <PackagePath>imagenesSableye\sableyeEvolucionNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\sableyeGanar.png">
+      <PackagePath>imagenesSableye\sableyeGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\sableyeNoF.png">
+      <PackagePath>imagenesSableye\sableyeNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\ayuda.png">
+      <PackagePath>img\ayuda.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\ayudaTexto.png">
+      <PackagePath>img\ayudaTexto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\ayudaTexto2.png">
+      <PackagePath>img\ayudaTexto2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\botonesEsp.png">
+      <PackagePath>img\botonesEsp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\botonesIngles.png">
+      <PackagePath>img\botonesIngles.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\castformPerder.png">
+      <PackagePath>img\castformPerder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\celebi.png">
+      <PackagePath>img\celebi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\chinchetaNoF.png">
+      <PackagePath>img\chinchetaNoF.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\copaGanar.png">
+      <PackagePath>img\copaGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\english.png">
+      <PackagePath>img\english.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\flecha.png">
+      <PackagePath>img\flecha.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\flechaAtras.png">
+      <PackagePath>img\flechaAtras.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\fondoBatalla.png">
+      <PackagePath>img\fondoBatalla.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\fondoCombate.png">
+      <PackagePath>img\fondoCombate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\fondoGanar.png">
+      <PackagePath>img\fondoGanar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\funcionamiento.png">
+      <PackagePath>img\funcionamiento.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\funcionamientoIngles.png">
+      <PackagePath>img\funcionamientoIngles.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\ganar.png">
+      <PackagePath>img\ganar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\help.png">
+      <PackagePath>img\help.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\homeIcono.png">
+      <PackagePath>img\homeIcono.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\iconoAp.png">
+      <PackagePath>img\iconoAp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\imagenIpokemon.png">
+      <PackagePath>img\imagenIpokemon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\imagenMenu.png">
+      <PackagePath>img\imagenMenu.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\imgAumentar.png">
+      <PackagePath>img\imgAumentar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\imgDisminuir.png">
+      <PackagePath>img\imgDisminuir.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\individual.png">
+      <PackagePath>img\individual.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\jugador1.png">
+      <PackagePath>img\jugador1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\jugador2.png">
+      <PackagePath>img\jugador2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\jugadorMaquina.png">
+      <PackagePath>img\jugadorMaquina.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\libro.png">
+      <PackagePath>img\libro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\mando.png">
+      <PackagePath>img\mando.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\manual.png">
+      <PackagePath>img\manual.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\manualCombate.png">
+      <PackagePath>img\manualCombate.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\manualCombateIngles.png">
+      <PackagePath>img\manualCombateIngles.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\multijugador.png">
+      <PackagePath>img\multijugador.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\multiplayer.png">
+      <PackagePath>img\multiplayer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\onePlayer.png">
+      <PackagePath>img\onePlayer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\osoPerder.png">
+      <PackagePath>img\osoPerder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\pikachuDuda.png">
+      <PackagePath>img\pikachuDuda.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\piplupPerder.png">
+      <PackagePath>img\piplupPerder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\piplupPok.png">
+      <PackagePath>img\piplupPok.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\pokDitto.png">
+      <PackagePath>img\pokDitto.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\pokedex.png">
+      <PackagePath>img\pokedex.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\rayo.png">
+      <PackagePath>img\rayo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\sableyePerder.png">
+      <PackagePath>img\sableyePerder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\sableyePok.png">
+      <PackagePath>img\sableyePok.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\spain.png">
+      <PackagePath>img\spain.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\teddiursaPok.png">
+      <PackagePath>img\teddiursaPok.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\textHelp.png">
+      <PackagePath>img\textHelp.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\textoPokedex.png">
+      <PackagePath>img\textoPokedex.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\textoPokedex2.png">
+      <PackagePath>img\textoPokedex2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\tipoAgua.png">
+      <PackagePath>img\tipoAgua.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\tipoFantasma.png">
+      <PackagePath>img\tipoFantasma.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\tipoNormal.png">
+      <PackagePath>img\tipoNormal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\tipoSiniestro.png">
+      <PackagePath>img\tipoSiniestro.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesCastform\ganaCastform.JPG">
+      <PackagePath>imagenesCastform\ganaCastform.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\escudo.jpg">
+      <PackagePath>imagenesOso\escudo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\finJuego.jpg">
+      <PackagePath>imagenesOso\finJuego.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\fondo.jpg">
+      <PackagePath>imagenesOso\fondo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\ganaOso.JPG">
+      <PackagePath>imagenesOso\ganaOso.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\oso.jpg">
+      <PackagePath>imagenesOso\oso.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\pocima.jpg">
+      <PackagePath>imagenesOso\pocima.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesOso\reintentar.jpg">
+      <PackagePath>imagenesOso\reintentar.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\ganaPiplup.JPG">
+      <PackagePath>imagenesPinguino\ganaPiplup.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesPinguino\paisaje.jpg">
+      <PackagePath>imagenesPinguino\paisaje.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\fondo.jpg">
+      <PackagePath>imagenesSableye\fondo.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\imagenesSableye\ganaSableye.JPG">
+      <PackagePath>imagenesSableye\ganaSableye.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\bolasPokemon.jpg">
+      <PackagePath>img\bolasPokemon.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\fondoPokemon1.jpg">
+      <PackagePath>img\fondoPokemon1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\pkd1.jpg">
+      <PackagePath>img\pkd1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\pkd2.jpg">
+      <PackagePath>img\pkd2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\img\teddiursa.jpg">
+      <PackagePath>img\teddiursa.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\Lab5.xr.xml">
+      <PackagePath>Lab5.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\AyudaMain.xbf">
+      <PackagePath>AyudaMain.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\CombatePokemon.xbf">
+      <PackagePath>CombatePokemon.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\InfoCastform.xbf">
+      <PackagePath>InfoCastform.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\InfoPiplup.xbf">
+      <PackagePath>InfoPiplup.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\InfoSableye.xbf">
+      <PackagePath>InfoSableye.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\InfoTeddiursa.xbf">
+      <PackagePath>InfoTeddiursa.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\ManualJuego.xbf">
+      <PackagePath>ManualJuego.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\MUCCastform.xbf">
+      <PackagePath>MUCCastform.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\MUCPinguino.xbf">
+      <PackagePath>MUCPinguino.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\MUCPokemonOso.xbf">
+      <PackagePath>MUCPokemonOso.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\MUCPokemonSableye.xbf">
+      <PackagePath>MUCPokemonSableye.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\PokedexPage.xbf">
+      <PackagePath>PokedexPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\PokemonCombateIndividual.xbf">
+      <PackagePath>PokemonCombateIndividual.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+      <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\david\Desktop\David UNI\TERCERO-TI\2 Cuatrimestre\IPO 2\Lab\Proyecto Grupal Pokedex\Ipokemon\Ipokemon %281%29\IPOkemon\Lab5\bin\x86\Debug\Core\Lab5.exe">
+      <PackagePath>Lab5.exe</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2203.17001.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2203.17001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2203.17001.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2203.17001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2203.17001.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2203.17001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2203.17001.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2203.17001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx">
+      <Name>Microsoft.UI.Xaml.2.7</Name>
+      <Version>7.2203.17001.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.7, MinVersion = 7.2203.17001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.30527.2</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.30527.2</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.30527.2</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.30527.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.30316.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.30316.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\david\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.30316.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.30316.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\david\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.13\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="Lab5.InfoSableye"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/imagenesSableye/fondoSableye.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="tbNombreSableye" HorizontalAlignment="Left" Margin="467,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Text="Nombre:"/>
+        <TextBlock x:Name="tbCategoriaSableye" HorizontalAlignment="Left" Margin="467,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Text="Categoría:"/>
+        <TextBlock x:Name="tbTipoSableye" HorizontalAlignment="Left" Margin="467,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Text="Tipo:"/>
+        <TextBlock x:Name="tbRarezaSableye" HorizontalAlignment="Left" Margin="468,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Text="Rareza:"/>
+        <TextBlock x:Name="tbDescripcionSableye" HorizontalAlignment="Left" Margin="56,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25"><Run Text="Descripcion"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="tbEvolucionSableye" HorizontalAlignment="Left" Margin="56,543,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25"><Run Text="Evolucion"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="tbGeneracionSableye" HorizontalAlignment="Left" Margin="469,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25"><Run Text="Generaci"/><Run Text="ón:"/></TextBlock>
+        <TextBlock x:Name="tbHabilidadSableye" HorizontalAlignment="Left" Margin="56,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="25" Text="Habilidad:"/>
+        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="409" Margin="66,1,0,0" VerticalAlignment="Top" Width="411" Source="/imagenesSableye/sableyeNoF.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="tbNombreSableye2" HorizontalAlignment="Left" Margin="629,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Text="Sableye"/>
+        <TextBlock x:Name="tbCategoriaSableye2" HorizontalAlignment="Left" Margin="628,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Text="Oscuridad"/>
+        <TextBlock x:Name="tbRarezaSableye2" HorizontalAlignment="Left" Margin="585,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Text="Epico"/>
+        <TextBlock x:Name="tbDescripcionSableye2" HorizontalAlignment="Left" Margin="242,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Height="48" Width="788"><Run Text="C"/><Run Text="uando las gemas de los ojos "/><Run Text="de estos Pokémon tan"/></TextBlock>
+        <TextBlock x:Name="tbDescripcionSableye3" HorizontalAlignment="Left" Margin="56,498,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Height="47" Width="976"><Run Text="temidos"/><Run Text=" brillan de manera siniestra,"/><Run Text=" "/><Run Text="están robándole el alma a alguien."/></TextBlock>
+        <TextBlock x:Name="tbGeneracionSableye2" HorizontalAlignment="Left" Margin="647,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Text="Tercera"/>
+        <TextBlock x:Name="tbHabilidadSableye2" HorizontalAlignment="Left" Margin="212,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" FontSize="25" Text="Vista lince"/>
+        <Image x:Name="imgTipo" HorizontalAlignment="Left" Height="87" Margin="563,210,0,0" VerticalAlignment="Top" Width="76" Source="/img/tipoSiniestro.png"/>
+        <Image x:Name="imgTipo2" HorizontalAlignment="Left" Height="89" Margin="646,208,0,0" VerticalAlignment="Top" Width="94" Source="/img/tipoFantasma.png"/>
+        <Image x:Name="imgPiedraEv" HorizontalAlignment="Left" Height="100" Margin="233,566,0,0" VerticalAlignment="Top" Width="100" Source="/imagenesSableye/piedraMorado_evNoF.png"/>
+        <Image x:Name="imgFlecha" HorizontalAlignment="Left" Height="140" Margin="372,546,0,0" VerticalAlignment="Top" Width="145" Source="/img/flecha.png"/>
+        <Image x:Name="imgPiplupEv" HorizontalAlignment="Left" Height="190" Margin="551,527,0,0" VerticalAlignment="Top" Width="180" Source="/imagenesSableye/sableyeEvolucionNoF.png"/>
+        <Button x:Name="btnAtrasSableye" Content="" Margin="16,14,0,0" VerticalAlignment="Top" Height="75" Width="72" Click="btnAtras_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/img/flechaAtras.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imgAumentar" HorizontalAlignment="Left" Height="69" Margin="942,28,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgAumentar.png" PointerReleased="imgAumentar_PointerReleased"/>
+        <Image x:Name="imgDisminuir" HorizontalAlignment="Left" Height="72" Margin="942,16,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgDisminuir.png" Visibility="Collapsed" PointerReleased="imgDisminuir_PointerReleased"/>
+
+    </Grid>
+</Page>

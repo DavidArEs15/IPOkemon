@@ -1,0 +1,1094 @@
+﻿<UserControl
+    x:Class="Lab5.MUCPokemonOso"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="500" Width="500">
+
+    <Grid Margin="32,10,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="72*"/>
+            <ColumnDefinition Width="34*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="317*"/>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="42*"/>
+        </Grid.RowDefinitions>
+
+        <ProgressBar x:Name="pbVida" Grid.Column="1" Margin="5,5,5,5" VerticalAlignment="Stretch" Value="100" Grid.ColumnSpan="6" Foreground="#FF2BD932"/>
+        <Image x:Name="imgCorazon" Margin="-3,0,59,29" Source="/imagenesSableye/corazonPokemon.png" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+        </Image>
+        <ProgressBar x:Name="pbEscudo" Grid.Column="1" Margin="5,5,5,5" Value="100" Grid.Row="1" Foreground="#FFE8E222" Grid.ColumnSpan="6" VerticalAlignment="Stretch" BorderBrush="Black"/>
+        <Image x:Name="imgEscudo" Margin="0,2,0,-1" Grid.Row="1" Source="/img/rayo.png">
+
+        </Image>
+        <Image x:Name="imgPocima" Grid.Column="7" Margin="2,2,2,2" Grid.RowSpan="2" Source="/imagenesPinguino/pocima3.png" PointerReleased="subirVida" />
+        <Image x:Name="imgCorazon2" Source="/imagenesOso/Corazón.png" Grid.ColumnSpan="8" Margin="2,39,2,3" Grid.Row="2" Opacity="0.5" Grid.RowSpan="2" Visibility="Collapsed">
+
+        </Image>
+        <Image x:Name="imgEspiral" Source="/imagenesOso/espiralNoF.png" Grid.ColumnSpan="8" Margin="0,21,10,10" Grid.Row="2" Opacity="0.5" Grid.RowSpan="3" Visibility="Collapsed">
+
+        </Image>
+        <Canvas x:Name="pokemon" HorizontalAlignment="Left" Width="428.04" Grid.RowSpan="2" Margin="13,2,0,10" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="8" VerticalAlignment="Top">
+
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas x:Name="pataIzq" Height="109.91" Canvas.Left="100" Canvas.Top="107" Width="57.146" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Path x:Name="ptGarra1PataIzq" HorizontalAlignment="Left" VerticalAlignment="Top" Stroke="Black" Canvas.Top="5.744" Data="M0.5,0.5 L6.8776908,0.5 6.8776908,6.7515669 6.597775,6.3956084 C4.7886519,4.1376328 2.8368015,2.2104191 0.79137039,0.70814154 z" Height="10.566" Canvas.Left="8.779" RenderTransformOrigin="0.262777417395228,0.932626090375714" Stretch="Fill" Width="10.406">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1.123" ScaleX="0.891"/>
+                            <SkewTransform AngleY="-32.425"/>
+                            <RotateTransform Angle="-43.659"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <SolidColorBrush Color="White" Opacity="0.9"/>
+                    </Path.Fill>
+                </Path>
+                <Path x:Name="ptGarra3PataIzq" HorizontalAlignment="Left" VerticalAlignment="Top" Stroke="Black" Canvas.Top="11.843" Data="M0.5,0.5 L9.2920601,0.5 9.2920601,4.5139173 9.1538069,4.427061 C6.8175428,2.9940308 4.1214345,1.7502418 1.1713922,0.722525 z" Height="8.834" RenderTransformOrigin="0.444549953389112,1.34884560646967" Stretch="Fill" Width="13.979">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1.091" ScaleX="0.917"/>
+                            <SkewTransform AngleY="-28.899"/>
+                            <RotateTransform Angle="-86.517"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <SolidColorBrush Color="White" Opacity="0.9"/>
+                    </Path.Fill>
+                </Path>
+                <Path x:Name="ptGarra2PataIzq" HorizontalAlignment="Left" VerticalAlignment="Top" Stroke="Black" Canvas.Top="3.324" Data="M0.5,0.5 L7.0750067,0.5 7.0750067,5.0113157 6.7391417,4.6728209 C6.1622298,4.1085156 5.5465539,3.5738703 4.8922188,3.0719565 3.5835497,2.0681289 2.1821935,1.2427435 0.71270204,0.5907256 z" Height="11.798" Canvas.Left="8.891" RenderTransformOrigin="0.281980801073754,1.22711168163136" Stretch="Fill" Width="10.235">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1.095" ScaleX="0.914"/>
+                            <SkewTransform AngleY="-30.007"/>
+                            <RotateTransform Angle="-74.512"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <SolidColorBrush Color="White" Opacity="0.9"/>
+                    </Path.Fill>
+                </Path>
+                <Ellipse x:Name="ptPataIzq" Fill="#FFD37742" HorizontalAlignment="Left" Height="109.91" Stroke="Black" VerticalAlignment="Top" Width="50.288" RenderTransformOrigin="0.5,0.5" Canvas.Left="6.858">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="pataIzqNaranja" x:Key="pataIzqNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptPataIzq"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.981" ScaleX="1.019"/>
+                            <SkewTransform AngleY="-3.108"/>
+                            <RotateTransform Angle="-34.174"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Canvas>
+            <Path x:Name="ptCuerpo" Fill="#FFD37742" Canvas.Left="219.13" Stroke="Black" Canvas.Top="148.897" Width="134.41" Height="144.152" Data="M48.017483,0.50051653 C58.030308,0.42017782 74.249313,9.7167344 88.931793,24.837394 106.606,43.039062 115.77914,63.218288 110.65372,71.692985 L110.42115,72.051902 110.50333,72.163352 C110.59958,72.308273 110.67023,72.461921 110.71426,72.624336 111.65354,76.089126 100.12187,82.230491 84.95755,86.341453 75.005966,89.039276 65.962982,90.192237 60.656387,89.686889 L60.287857,89.644882 59.734329,90.080749 C56.102489,92.89434 51.513103,95.90509 46.359451,98.760627 32.616386,106.3754 20.065002,110.00288 18.325157,106.86282 18.270786,106.76469 18.227619,106.66112 18.195425,106.5523 L18.157179,106.34758 18.038105,106.32812 C8.2277765,104.40305 0.5,83.264366 0.5,57.470874 0.5,30.408851 9.0065765,8.4707465 19.499969,8.4707484 22.779156,8.4707465 25.864315,10.61314 28.556486,14.3848 L28.94767,14.948762 29.384966,14.729869 C30.347179,14.261779 31.346378,13.816129 32.377945,13.397694 34.441067,12.560823 36.487152,11.89223 38.463055,11.390278 L38.566315,11.365343 38.542145,10.834198 C38.445583,7.4717407 39.283352,4.7470121 41.165394,2.9194684 41.871162,2.2341385 42.698723,1.6993059 43.634571,1.3087751 44.906746,0.77789247 46.379021,0.51366246 48.017483,0.50051653 z" RenderTransformOrigin="0.173229886839505,0.529719674402625" Stretch="Fill" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="cuerpoNaranja" x:Key="cuerpoNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptCuerpo"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.992" ScaleX="-1.008"/>
+                        <SkewTransform AngleY="-2.285" AngleX="0"/>
+                        <RotateTransform Angle="-20.96"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptsombraCuerpo" Fill="#FFA05A32" Canvas.Top="245.441" Data="M50.250473,0.5 L50.254143,0.51101717 C51.347809,3.5807362 52.916306,6.1715393 54.869797,8.0613952 L55.062653,8.2363897 54.814346,8.3453384 C51.520599,9.7615495 47.679756,11.127439 43.528122,12.310697 34.809689,14.795547 26.887268,15.857487 22.238243,15.392035 L21.915379,15.35334 21.430443,15.754804 C18.248642,18.346282 14.227959,21.119351 9.7129173,23.749465 7.0791473,25.283698 4.4953384,26.642193 2.0497036,27.79815 L1.3214359,28.136517 1.3471184,28.0029 C1.8006783,25.209044 1.5556316,22.160054 0.65740013,19.084837 L0.5,18.585829 1.0264759,18.324452 C2.8246117,17.417662 4.6803856,16.41144 6.5616493,15.31556 11.076687,12.685448 15.097378,9.9123769 18.279175,7.3209005 L18.764114,6.9194446 19.086975,6.9581337 C23.736004,7.4235907 31.658421,6.36165 40.376846,3.8768001 43.698158,2.9301939 46.820557,1.8667027 49.623062,0.75407192 z" Height="40.6" Canvas.Left="261.385" RenderTransformOrigin="-0.249425637898874,-0.498608539527081" Stretch="Fill" Width="74.057" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="sombraCuerpoNaranja" x:Key="sombraCuerpoNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombraCuerpo"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.992" ScaleX="-1.008"/>
+                        <SkewTransform AngleY="-2.285" AngleX="0"/>
+                        <RotateTransform Angle="-20.96"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptGarra1PataDer" Stroke="Black" Canvas.Top="264.832" Data="M0.5,0.5 L6.8776908,0.5 6.8776908,6.7515669 6.597775,6.3956084 C4.7886519,4.1376328 2.8368015,2.2104191 0.79137039,0.70814154 z" Height="10.566" Canvas.Left="212.751" RenderTransformOrigin="0.262777417395228,0.932626090375714" Stretch="Fill" Width="10.406" UseLayoutRounding="False">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1.141" ScaleX="0.877"/>
+                        <SkewTransform AngleY="-28.754"/>
+                        <RotateTransform Angle="-153.061"/>
+                        <TranslateTransform X="-8.445" Y="-7.71"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <SolidColorBrush Color="White" Opacity="0.9"/>
+                </Path.Fill>
+            </Path>
+            <Path x:Name="ptGarra3PataDer" Stroke="Black" Canvas.Top="269.373" Data="M0.5,0.5 L9.2920601,0.5 9.2920601,4.5139173 9.1538069,4.427061 C6.8175428,2.9940308 4.1214345,1.7502418 1.1713922,0.722525 z" Height="8.835" Canvas.Left="206.377" RenderTransformOrigin="0.444549953389112,1.34884560646967" Stretch="Fill" Width="13.978" UseLayoutRounding="False">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.966" ScaleX="1.035"/>
+                        <SkewTransform AngleX="-32.643"/>
+                        <RotateTransform Angle="128.23"/>
+                        <TranslateTransform X="1.98" Y="-11.239"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <SolidColorBrush Color="White" Opacity="0.9"/>
+                </Path.Fill>
+            </Path>
+            <Path x:Name="ptGarra2PataDer" Stroke="Black" Canvas.Top="261.465" Data="M0.5,0.5 L7.0750067,0.5 7.0750067,5.0113157 6.7391417,4.6728209 C6.1622298,4.1085156 5.5465539,3.5738703 4.8922188,3.0719565 3.5835497,2.0681289 2.1821935,1.2427435 0.71270204,0.5907256 z" Height="11.798" Canvas.Left="213.303" RenderTransformOrigin="0.281980801073754,1.22711168163136" Stretch="Fill" Width="10.235" UseLayoutRounding="False">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.984" ScaleX="1.017"/>
+                        <SkewTransform AngleX="-31.583"/>
+                        <RotateTransform Angle="146.762"/>
+                        <TranslateTransform X="-7.226" Y="-9.856"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Fill>
+                    <SolidColorBrush Color="White" Opacity="0.9"/>
+                </Path.Fill>
+            </Path>
+            <Ellipse x:Name="ptPataDer" Fill="#FFD37742" Height="109.91" Stroke="Black" Width="50.287" RenderTransformOrigin="0.5,0.5" Canvas.Left="205.941" Canvas.Top="177.449" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Ellipse.Resources>
+                    <Storyboard x:Name="pataDerNaranja" x:Key="pataDerNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptPataDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Ellipse.Resources>
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.986" ScaleX="1.014"/>
+                        <SkewTransform AngleY="2.832"/>
+                        <RotateTransform Angle="28.467"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Path x:Name="ptsombra2Cab" Fill="#FFA05A32" Canvas.Left="183.689" Data="M42.471424,0 L42.128262,1.472084 C41.39109,4.8366127 40.878437,8.4566498 40.632343,12.247757 L40.544144,13.921196 39.95451,14.067905 C34.374596,15.401798 28.396172,16.125042 22.178619,16.125042 15.064304,16.125042 8.2630663,15.178123 2.0136914,13.452972 L0.95681328,13.151932 1.101542,12.17411 C1.24553,11.26572 1.4050139,10.381233 1.5795187,9.5224228 L1.5843214,9.500103 1.2099736,9.4711113 C0.85753196,9.440155 0.50598645,9.4065208 0.15537272,9.3702316 L0,9.3529243 0.59985417,9.4058113 C10.427507,10.169449 20.932814,8.8297119 31.275122,5.0918198 34.690781,3.857338 37.952881,2.4103622 41.044918,0.77841187 z" Height="23.243" RenderTransformOrigin="0.522200992634018,-1.42803821958411" Stretch="Fill" Canvas.Top="190.483" Width="56.969" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="sombra2CabNaranja" x:Key="sombra2CabNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombra2Cab"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.987" ScaleX="1.013"/>
+                        <SkewTransform AngleY="2.776"/>
+                        <RotateTransform Angle="27.558"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptsombra1Cab" Fill="#FFA05A32" Canvas.Left="162.986" Data="M0,0 L0.0045611947,0.0015411377 C5.0828629,1.6508255 10.526219,2.6637306 16.177774,2.9852371 L16.55283,3.0026894 16.548717,3.0251503 C16.400734,3.8889427 16.268555,4.7779427 16.152599,5.6903572 L16.013659,6.8811646 15.086094,6.6251297 C9.9937267,5.129509 5.2851553,3.1128197 1.0937428,0.66927719 z" Height="9.918" RenderTransformOrigin="2.19587540588421,-4.29319658377836" Stretch="Fill" Canvas.Top="199.978" Width="22.532" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="sombra1CabNaranja" x:Key="sombra1CabNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombra1Cab"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.986" ScaleX="1.014"/>
+                        <SkewTransform AngleY="2.878"/>
+                        <RotateTransform Angle="29.27"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Canvas x:Name="pieDer" Height="72.671" Canvas.Left="243" Canvas.Top="228" Width="50.365" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Ellipse x:Name="ptPieDer" Fill="#FFD37742" HorizontalAlignment="Left" Height="72.671" Stroke="Black" VerticalAlignment="Top" Width="50.365" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="pieDerNaranja" x:Key="pieDerNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptPieDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.99" ScaleX="1.01"/>
+                            <SkewTransform AngleY="2.528"/>
+                            <RotateTransform Angle="23.977"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path x:Name="ptGarra1PieDer" Canvas.Left="8.476" Stroke="Black" Height="17.023" Canvas.Top="15.524" Width="13.561" Data="M1.2471522,0.50037694 C2.7395463,0.46137398 6.3622622,3.4537243 9.5790186,7.4275588 12.637573,11.205958 14.279488,14.575011 13.563477,15.440666 L13.52934,15.477759 13.622452,15.592787 13.359313,15.592787 13.325128,15.607388 C13.305654,15.614604 13.285454,15.621021 13.264524,15.626629 13.097085,15.671498 12.890861,15.662495 12.65157,15.604243 L12.608261,15.592787 0.5,15.592787 0.5,0.65023309 0.66080862,0.84888309 0.67807233,0.81272852 C0.75455707,0.66985756 0.87528378,0.5732401 1.0427222,0.52837098 1.1055118,0.51154506 1.1737558,0.50229502 1.2471522,0.50037694 z" RenderTransformOrigin="1.11668141188087,0.23585189986765" Stretch="Fill" Fill="White">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-0.947" ScaleX="1.056"/>
+                            <SkewTransform AngleY="0" AngleX="32.378"/>
+                            <RotateTransform Angle="76.975"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptGarra2PieDer" Canvas.Left="23.676" Stroke="Black" Height="17.023" Canvas.Top="22.972" Width="13.562" Data="M1.2471522,0.50037694 C2.7395463,0.46137398 6.3622622,3.4537243 9.5790186,7.4275588 12.637573,11.205958 14.279488,14.575011 13.563477,15.440666 L13.52934,15.477759 13.622452,15.592787 13.359313,15.592787 13.325128,15.607388 C13.305654,15.614604 13.285454,15.621021 13.264524,15.626629 13.097085,15.671498 12.890861,15.662495 12.65157,15.604243 L12.608261,15.592787 0.5,15.592787 0.5,0.65023309 0.66080862,0.84888309 0.67807233,0.81272852 C0.75455707,0.66985756 0.87528378,0.5732401 1.0427222,0.52837098 1.1055118,0.51154506 1.1737558,0.50229502 1.2471522,0.50037694 z" RenderTransformOrigin="1.11668141188087,0.23585189986765" Stretch="Fill" Fill="White">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1.144" ScaleX="0.874"/>
+                            <SkewTransform AngleY="-29.125"/>
+                            <RotateTransform Angle="-156.895"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Ellipse x:Name="ptsombraPieDer" Fill="#FFA05A32" HorizontalAlignment="Left" Height="58.005" VerticalAlignment="Top" Width="41.264" RenderTransformOrigin="0.5,0.5" Canvas.Left="3.933" Canvas.Top="14.325">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="sombraPieDerNaranja" x:Key="sombraPieDerNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombraPieDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.981" ScaleX="1.019"/>
+                            <SkewTransform AngleY="3.104"/>
+                            <RotateTransform Angle="34.065"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Fill="#FFF1D597" Height="27.386" Canvas.Left="17.605" Stroke="Black" Canvas.Top="39.011" Width="14.746" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.984" ScaleX="1.016"/>
+                            <SkewTransform AngleY="2.984"/>
+                            <RotateTransform Angle="31.29"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Canvas>
+            <Canvas x:Name="pieIzq" Height="77.836" Canvas.Left="112" Canvas.Top="228" Width="53.867" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Ellipse x:Name="ptPieIzq" Fill="#FFD37742" HorizontalAlignment="Left" Height="77.836" Stroke="Black" VerticalAlignment="Top" Width="47.094" RenderTransformOrigin="0.5,0.5" Canvas.Left="6.773">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="pieIzqNaranja" x:Key="pieIzqNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptPieIzq"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.984" ScaleX="-1.016"/>
+                            <SkewTransform AngleY="-2.968" AngleX="0"/>
+                            <RotateTransform Angle="-30.952"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path x:Name="ptGarra2PieIzq" Canvas.Left="8.848" Stroke="Black" Height="17.023" Canvas.Top="16.186" Width="13.561" Data="M1.2471522,0.50037694 C2.7395463,0.46137398 6.3622622,3.4537243 9.5790186,7.4275588 12.637573,11.205958 14.279488,14.575011 13.563477,15.440666 L13.52934,15.477759 13.622452,15.592787 13.359313,15.592787 13.325128,15.607388 C13.305654,15.614604 13.285454,15.621021 13.264524,15.626629 13.097085,15.671498 12.890861,15.662495 12.65157,15.604243 L12.608261,15.592787 0.5,15.592787 0.5,0.65023309 0.66080862,0.84888309 0.67807233,0.81272852 C0.75455707,0.66985756 0.87528378,0.5732401 1.0427222,0.52837098 1.1055118,0.51154506 1.1737558,0.50229502 1.2471522,0.50037694 z" RenderTransformOrigin="1.11668141188087,0.23585189986765" Stretch="Fill" Fill="White">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.947" ScaleX="1.056"/>
+                            <SkewTransform AngleX="-32.342"/>
+                            <RotateTransform Angle="102.362"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptGarra1PieIzq" Stroke="Black" Height="17.023" Canvas.Top="23.393" Width="13.561" Data="M1.2471522,0.50037694 C2.7395463,0.46137398 6.3622622,3.4537243 9.5790186,7.4275588 12.637573,11.205958 14.279488,14.575011 13.563477,15.440666 L13.52934,15.477759 13.622452,15.592787 13.359313,15.592787 13.325128,15.607388 C13.305654,15.614604 13.285454,15.621021 13.264524,15.626629 13.097085,15.671498 12.890861,15.662495 12.65157,15.604243 L12.608261,15.592787 0.5,15.592787 0.5,0.65023309 0.66080862,0.84888309 0.67807233,0.81272852 C0.75455707,0.66985756 0.87528378,0.5732401 1.0427222,0.52837098 1.1055118,0.51154506 1.1737558,0.50229502 1.2471522,0.50037694 z" RenderTransformOrigin="1.11668141188087,0.23585189986765" Stretch="Fill" Fill="White">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-1"/>
+                            <SkewTransform AngleY="0" AngleX="28.467"/>
+                            <RotateTransform Angle="-1.62"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Ellipse x:Name="ptsombraPieIzq" Fill="#FFA05A32" HorizontalAlignment="Left" Height="59.642" VerticalAlignment="Top" Width="38.6" RenderTransformOrigin="0.5,0.5" Canvas.Left="13.232" Canvas.Top="17.205">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="sombraPieIzqNaranja" x:Key="sombraPieIzqNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombraPieIzq"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.976" ScaleX="-1.025"/>
+                            <SkewTransform AngleY="-3.257" AngleX="0"/>
+                            <RotateTransform Angle="-40.134"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Fill="#FFF1D597" Height="27.386" Canvas.Left="24.669" Stroke="Black" Canvas.Top="41.595" Width="14.746" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.98" ScaleX="1.02"/>
+                            <SkewTransform AngleY="-3.145"/>
+                            <RotateTransform Angle="-35.246"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </Canvas>
+            <Path x:Name="ptsombra3Cab" Fill="#FFA05A32" Data="M22.933094,0 L23.006527,0.039045334 C26.278782,1.871376 29.152607,5.6125336 31.351627,10.658669 L31.482182,10.965706 31.185154,11.561436 C25.901325,21.75565 14.788498,29.964962 0.69812775,34.175034 L0,34.37653 0.0057945251,34.17268 C0.21389389,29.04496 0.90832901,24.196358 1.9894562,19.827003 L2.0511131,19.591713 3.3695869,18.773846 C11.151066,13.795025 17.620655,7.5881519 22.453678,0.69500542 z" Height="48.096" Canvas.Left="238.592" RenderTransformOrigin="-0.663078399557705,-0.0552822002554147" Stretch="Fill" Canvas.Top="161.292" Width="41.54" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="sombra3CabNaranja" x:Key="sombra3CabNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombra3Cab"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.987" ScaleX="1.013"/>
+                        <SkewTransform AngleY="2.776"/>
+                        <RotateTransform Angle="27.558"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptsombra4Cab" Fill="#FFA05A32" Data="M22.563365,0.0017127991 C25.96618,0.060726166 29.184392,1.640152 32.090371,4.4458389 L32.551167,4.905941 32.343476,5.2345505 C25.440423,15.800459 14.130069,24.456366 0.2064805,29.858427 L0,29.936018 0.4525032,28.113844 C4.8880501,11.217512 13.205625,-0.16057396 22.563365,0.0017127991 z" Height="29.936" Canvas.Left="249.429" RenderTransformOrigin="-1.0255006443139,-0.628428917837353" Stretch="Fill" Canvas.Top="159.398" Width="32.551" UseLayoutRounding="False">
+                <Path.Resources>
+                    <Storyboard x:Name="sombra4CabNaranja" x:Key="sombra4CabNaranjaKey" RepeatBehavior="2x">
+                        <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombra4Cab"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                    </Storyboard>
+                </Path.Resources>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.987" ScaleX="1.013"/>
+                        <SkewTransform AngleY="2.776"/>
+                        <RotateTransform Angle="27.558"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Canvas x:Name="cabeza" Height="276.861" Canvas.Left="104" Canvas.Top="24" Width="233.353" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Path x:Name="ptCabeza" Data="M35.134087,0.50203437 C41.470227,0.57612699 47.604462,2.6747943 52.539093,6.9315473 58.61248,12.170626 61.718773,19.686788 61.831303,27.603555 L61.829918,27.750679 62.455784,27.475673 C73.30262,22.839998 85.879677,20.188787 99.289871,20.188789 114.6158,20.188787 128.85355,23.651592 140.66405,29.581939 L140.96826,29.742725 141.1488,28.77062 C142.35461,23.071243 145.24066,17.861086 149.79569,13.931785 161.94244,3.453647 181.35782,6.0516797 193.16113,19.734655 204.96446,33.417625 204.68607,53.004078 192.53931,63.482216 187.22511,68.066398 180.51964,70.14772 173.66904,69.892936 L172.94174,69.848251 173.07423,70.957168 C173.21721,72.353805 173.29001,73.765037 173.29001,75.188896 173.29001,105.56461 140.15901,130.189 99.289871,130.189 58.420719,130.189 25.289725,105.56461 25.289723,75.188896 25.289725,71.391929 25.807398,67.684829 26.793144,64.104454 L27.143145,62.9095 25.742235,62.858486 C19.927616,62.50185 14.350423,60.411384 9.7953808,56.482074 -2.3513927,46.003917 -2.6297939,26.417427 9.1735556,12.734428 16.181792,4.6101466 25.873581,0.3937479 35.134087,0.50203437 z" Fill="#FFD37742" Height="175.055" Stretch="Fill" Stroke="Black" Width="233.353" RenderTransformOrigin="0.5,0.5">
+                    <Path.Resources>
+                        <Storyboard x:Name="cabezaNaranja" x:Key="cabezaNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptCabeza"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD37742"
+                                To="#FFFF7514" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Path.Resources>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.999" ScaleX="1.001"/>
+                            <SkewTransform AngleY="1.02"/>
+                            <RotateTransform Angle="8.558"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Ellipse Fill="#FFF1D597" Height="62.428" Canvas.Left="47.768" Stroke="Black" Canvas.Top="112.524" Width="111.577" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.998" ScaleX="1.002"/>
+                            <SkewTransform AngleY="1.171"/>
+                            <RotateTransform Angle="9.888"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path x:Name="ptLuna" Fill="#FFD2D2EA" Height="96.54" Canvas.Left="70.105" Stroke="Black" Canvas.Top="27.642" Data="M35.23,0.5 C51.114143,0.50000045 64.507698,10.628606 68.642494,24.457129 L68.776474,24.927412 68.628372,24.563126 C64.885681,15.687903 55.633171,9.4076543 44.811981,9.4076543 30.678186,9.4076543 19.220482,20.121481 19.220482,33.337655 19.220482,46.55383 30.678186,57.267655 44.811981,57.267655 55.854012,57.267655 65.26268,50.728455 68.850594,41.56559 L69.035591,41.07446 68.866608,41.732216 C65.012222,55.961575 51.413841,66.475998 35.23,66.475998 16.04915,66.475998 0.5,51.706768 0.5,33.487999 0.5,15.269231 16.04915,0.50000045 35.23,0.5 z" RenderTransformOrigin="0.506647019602116,0.500000018829358" Stretch="Fill" Width="94.654">
+                    <Path.Resources>
+                        <Storyboard x:Name="lunaAmarilla" x:Key="lunaAmKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptLuna"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFD2D2EA"
+                                To="#FFFDE234" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                        <Storyboard x:Name="bordeLunaAm" x:Key="bordeLunaAmKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptLuna"
+                                Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" From="#FF000000"
+                                To="#FFFD4634" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Path.Resources>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.998" ScaleX="1.002"/>
+                            <SkewTransform AngleY="1.098"/>
+                            <RotateTransform Angle="9.237"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+
+                    </Path.RenderTransform>
+
+                </Path>
+                <Viewbox x:Name="vbOjoIzq" Height="22.102" Canvas.Left="70.191" Canvas.Top="94.53" Width="21.78" Stretch="Fill">
+                    <Canvas x:Name="ojoIzq" Height="22.102" Width="21.78">
+                        <Path x:Name="ptLaserIzq" Data="M5.0913238,13.364119 L-40.949667,51.616" Fill="Red" Height="29.252" Canvas.Left="-21.848" Stretch="Fill" Stroke="Red" Canvas.Top="10" Width="30.041" StrokeThickness="5" RenderTransformOrigin="0.446,0.411" Visibility="Collapsed"/>
+                        <Ellipse x:Name="ptOjoIzq" Fill="Black" Height="22.102" Stroke="Black" Width="21.78">
+                            <Ellipse.Resources>
+                                <Storyboard x:Name="ojoIzqA" x:Key="ojoIzqAKey" RepeatBehavior="2x">
+                                    <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptOjoIzq"
+                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FF000000"
+                                        To="#FF35D191" Duration="0:0:1" AutoReverse="True" />
+                                </Storyboard>
+                            </Ellipse.Resources>
+                        </Ellipse>
+                        <Ellipse x:Name="ptOjoIzqB" Fill="White" Height="11.338" Canvas.Left="8.193" Canvas.Top="2.406" Width="10.928"/>
+                        <Path x:Name="ptOjoIzqG" Data="M3.9177101,0.50054836 C4.4378479,0.49424934 4.989197,0.54212761 5.5531933,0.65032768 8.0508897,1.1295004 9.8803508,2.615942 9.7411773,4.0171089 L9.7387493,4.0369835 9.6732137,4.0681019 C8.6895673,4.5209951 7.5866296,4.7747965 6.4216535,4.7747965 4.0269811,4.7747965 1.8944349,3.7024069 0.52129936,2.0328007 L0.5,2.0062551 0.51472759,1.9745703 C0.95656061,1.0752754 2.2829902,0.52034473 3.9177101,0.50054836 z" Fill="#FF323242" Height="7.604" Canvas.Left="2.148" Stretch="Fill" Stroke="Black" Canvas.Top="14.498" Width="13.951"/>
+                        <Ellipse x:Name="ptOjoIzqAtaqueNaranja" Fill="#FFF01919" Height="22.102" Width="21.78" Visibility="Collapsed"/>
+                        <Path x:Name="ptOjoIzqLaser" Data="M3.8165314,0.5 L20.684931,11.751101 20.649538,11.853144 C19.192865,15.893151 15.372999,18.776356 10.89,18.776356 5.1517615,18.776356 0.5,14.052514 0.5,8.2253566 0.5,5.3117785 1.6629404,2.6740289 3.5431607,0.76467323 z" Fill="Black" Height="19.276" Stretch="Fill" Stroke="Black" Canvas.Top="2.826" Width="21.185" Visibility="Collapsed"/>
+                        <Path x:Name="ptOjoIzqGarras" Fill="#FFC58C27" Width="3.587" Canvas.Left="10.193" Data="M3.5694972,0 L3.5777403,0.39971161 C3.5838634,0.77121353 3.587,1.1481552 3.5869998,1.5296116 3.587,7.6329107 2.7840229,12.580611 1.7935001,12.580611 0.80297743,12.580611 1.0896929E-07,7.6329107 0,1.5296116 1.0896929E-07,1.1481552 0.0031367391,0.77121353 0.0092594791,0.39971161 L0.011804893,0.27628613 z" Height="12.581" RenderTransformOrigin="0.500000063311879,0.121584867242932" Stretch="Fill" Canvas.Top="8.913" Visibility="Collapsed">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="38.143"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Canvas>
+                </Viewbox>
+                <Ellipse x:Name="ptNariz" Fill="#FF323242" Height="9.97" Canvas.Left="99.912" Stroke="Black" Canvas.Top="116.632" Width="21.892" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.998" ScaleX="1.002"/>
+                            <SkewTransform AngleY="1.214"/>
+                            <RotateTransform Angle="10.269"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Path x:Name="ptOrejaIzq" Fill="#FFA05A32" Height="46.001" Canvas.Left="10.593" Canvas.Top="23.453" Data="M18.441,0.5 C24.014555,0.50000089 28.994505,2.6896381 32.285149,6.1249132 L32.51963,6.3819842 32.023247,6.9462556 C26.198738,13.736808 22.293877,21.73804 20.964912,30.405869 L20.845526,31.271777 20.275362,31.334197 C19.672239,31.386968 19.060284,31.414 18.441,31.414 8.5324593,31.414 0.5,24.493667 0.5,15.957001 0.5,7.4203357 8.5324593,0.50000089 18.441,0.5 z" RenderTransformOrigin="0.558485959977809,0.500000020940254" Stretch="Fill" Width="44.948">
+                    <Path.Resources>
+                        <Storyboard x:Name="orejaIzqNaranja" x:Key="orejaIzqNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptOrejaIzq"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Path.Resources>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.996" ScaleX="1.004"/>
+                            <SkewTransform AngleY="1.696"/>
+                            <RotateTransform Angle="14.734"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="ptOrejaDer" Fill="#FFA05A32" Canvas.Top="60.845" Data="M17.385684,0.5 C27.276274,0.49999994 35.294184,7.6558327 35.294184,16.483 35.294184,24.758469 28.247193,31.564991 19.216723,32.38348 L18.895484,32.405281 18.461682,31.453129 C14.745167,23.600449 8.7573001,16.838316 1.2110388,11.634056 L0.5,11.155966 0.56386614,10.98751 C3.0746286,4.8675737 9.6586587,0.49999994 17.385684,0.5 z" Height="46.092" Canvas.Left="179.94" RenderTransformOrigin="0.485712508120621,0.50092263113461" Stretch="Fill" Width="48.215">
+                    <Path.Resources>
+                        <Storyboard x:Name="orejaDerNaranja" x:Key="orejaDerNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptOrejaDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FFA05A32"
+                                To="#FFE04F25" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Path.Resources>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.992" ScaleX="1.008"/>
+                            <SkewTransform AngleY="2.277"/>
+                            <RotateTransform Angle="20.864"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Ellipse x:Name="ptsombraOrejaDer" Fill="#FF593018" Height="22.67" Canvas.Left="201.506" Canvas.Top="79.586" Width="16.399" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="sombraOrejaDerNaranja" x:Key="sombraOrejaDerNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombraOrejaDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FF593018"
+                                To="#FFBF3C16" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="0.982" ScaleX="1.019"/>
+                            <SkewTransform AngleY="3.1"/>
+                            <RotateTransform Angle="33.979"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse x:Name="ptsombraOrejaIzq" Fill="#FF593018" Height="22.843" Canvas.Left="22.399" Canvas.Top="37.578" Width="17.493" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.Resources>
+                        <Storyboard x:Name="sombraOrejaIzqNaranja" x:Key="sombraOrejaIzqNaranjaKey" RepeatBehavior="2x">
+                            <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptsombraOrejaIzq"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FF593018"
+                                To="#FFBF3C16" Duration="0:0:1" AutoReverse="True" />
+                        </Storyboard>
+                    </Ellipse.Resources>
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.451"/>
+                            <RotateTransform Angle="3.729"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Viewbox x:Name="vbOjoDer" Height="22.102" Canvas.Left="133.681" Canvas.Top="109.905" Width="21.78" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="19.693"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Canvas x:Name="ojoDer" Height="22.102" Width="21.78">
+                        <Viewbox x:Name="vbLaserDer" Height="32.116" Canvas.Left="5.752" Canvas.Top="5.899" Width="36.597" Stretch="Fill">
+                            <Path x:Name="ptLaserDer" Data="M5.0913238,13.364119 L-40.949667,51.616" Fill="Red" Stretch="Fill" Stroke="Red" StrokeThickness="5" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" Height="32" UseLayoutRounding="False" Width="37">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="-93.782"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                            </Path>
+                        </Viewbox>
+                        <Ellipse x:Name="ptOjoDer" Fill="Black" Height="22.102" Stroke="Black" Width="21.78" RenderTransformOrigin="0.5,0.5">
+                            <Ellipse.Resources>
+                                <Storyboard x:Name="ojoDerA" x:Key="ojoDerAKey" RepeatBehavior="2x">
+                                    <ColorAnimation BeginTime="00:00:00" Storyboard.TargetName="ptOjoDer"
+                                        Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" From="#FF000000"
+                                        To="#FF35D191" Duration="0:0:1" AutoReverse="True" />
+                                </Storyboard>
+                            </Ellipse.Resources>
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="15.672"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Ellipse x:Name="ptOjoDerB" Fill="White" Height="11.338" Canvas.Left="1.896" Canvas.Top="2.721" Width="10.928"/>
+                        <Path x:Name="ptOjoDerG" Data="M3.9177101,0.50054836 C4.4378479,0.49424934 4.989197,0.54212761 5.5531933,0.65032768 8.0508897,1.1295004 9.8803508,2.615942 9.7411773,4.0171089 L9.7387493,4.0369835 9.6732137,4.0681019 C8.6895673,4.5209951 7.5866296,4.7747965 6.4216535,4.7747965 4.0269811,4.7747965 1.8944349,3.7024069 0.52129936,2.0328007 L0.5,2.0062551 0.51472759,1.9745703 C0.95656061,1.0752754 2.2829902,0.52034473 3.9177101,0.50054836 z" Fill="#FF323242" Height="7.603" Canvas.Left="4.624" Stretch="Fill" Stroke="Black" Canvas.Top="14.655" Width="13.953" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-19.541"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Ellipse x:Name="ptOjoDerAtaqueNaranja" Fill="#FFF01919" Height="22.102" Width="21.78" Visibility="Collapsed"/>
+                        <Path x:Name="ptOjoDerLaser" Fill="Black" Stroke="Black" Data="M14.765365,0.5 C15.586902,0.9273082 16.344915,1.4623309 17.021463,2.0867659 L17.194692,2.2505237 17.318052,2.396911 C18.446937,3.7695855 19.249004,5.4498042 19.578159,7.3332571 20.5813,13.073305 16.812179,18.527345 11.159591,19.515203 7.7095248,20.118141 4.3552195,18.917941 2.0369407,16.585952 L1.8326348,16.372619 1.7095865,16.209638 C1.260832,15.600284 0.87542498,14.940025 0.56328046,14.23893 L0.5,14.092037 z" Height="20.17" Canvas.Left="0.855" RenderTransformOrigin="0.495827331634575,0.490676837654704" Stretch="Fill" Canvas.Top="1.154" Width="20.239" Visibility="Collapsed">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="15.672"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path x:Name="ptOjoDerGarras" Fill="#FFC58C27" Width="3.587" Canvas.Left="8.357" Data="M0.04358699,0 L3.5571734,0.41896534 3.5663351,0.73507404 C3.5799426,1.2838211 3.587,1.8458481 3.5870002,2.4180326 3.587,7.6630554 2.993981,12.05464 2.1985389,13.18605 L2.1756617,13.216738 2.1512727,13.217966 C1.9840039,13.224401 1.8166072,13.226841 1.6492372,13.225269 L1.4139495,13.22024 1.3884611,13.18605 C0.59301925,12.05464 1.1735671E-07,7.6630554 0,2.4180326 1.1735671E-07,1.6551208 0.012546638,0.91026402 0.036437465,0.19087124 z" Height="13.226" RenderTransformOrigin="0.499999998013612,0.182827930174564" Stretch="Fill" Canvas.Top="7.501" Visibility="Collapsed">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-34.745"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Canvas>
+                </Viewbox>
+                <Path x:Name="ptBocaTriste" Data="M22.927545,2.8421709E-14 C31.781362,-2.8312203E-07 39.692213,3.7894022 44.91953,9.7345159 L45.658334,10.616927 45.452169,10.544068 C38.892774,8.2894494 31.287069,6.9999997 23.177545,7.0000002 15.068019,6.9999997 7.462317,8.2894494 0.90292263,10.544068 L0,10.86316 0.089485645,10.745048 C5.2868056,4.2221424 13.581851,-2.8312203E-07 22.927545,2.8421709E-14 z" Fill="Black" Height="10.863" Stretch="Fill" Width="36.372" RenderTransformOrigin="0.5,0.5" Canvas.Left="88.667" Canvas.Top="139.089" Visibility="Collapsed">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="13.566"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Viewbox x:Name="vbDañar1" Stretch="Fill" Height="32.667" Canvas.Left="170.461" Canvas.Top="82.965" Width="32.667" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-16.285"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Grid Height="56.667" Width="55.667">
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="0.333,32.167,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167"/>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="31.5,32,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="31.333,0.667,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="-1" ScaleX="-1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+
+                    </Grid>
+                </Viewbox>
+                <Viewbox x:Name="vbBoca" Height="42.426" Canvas.Left="83.936" Canvas.Top="128.33" Width="41.456" RenderTransformOrigin="0.5,0.5">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="14.373"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Canvas x:Name="boca" Height="39.773" Width="38.558">
+                        <Path x:Name="ptBocaN" Data="M0.50253206,0.5 L23.497469,0.5 23.5,0.83349991 C23.5,11.418865 18.351274,20 12,20 5.6487252,20 0.4999997,11.418865 0.5,0.83349991 z" Fill="Black" Height="39.773" Canvas.Left="0.203" Stretch="Fill" Stroke="Black" Width="38.355" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="0.997" ScaleX="1.003"/>
+                                    <SkewTransform AngleY="1.451"/>
+                                    <RotateTransform Angle="-2.192"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path x:Name="ptBocaS" Fill="#FFA2566B" Stroke="Black" Canvas.Top="6.29" Data="M13.827368,0.5 C18.659445,0.49999982 23.034071,1.9270921 26.200676,4.2343882 L26.344769,4.341913 26.244919,4.937558 C24.440256,15.263311 19.370548,22.700161 13.390226,22.70684 7.5271673,22.71339 2.5234027,15.576355 0.60712385,5.5701035 L0.5,4.9887322 0.59592152,4.9060734 C3.8044429,2.2072147 8.5422821,0.49999982 13.827368,0.5 z" Height="32.965" RenderTransformOrigin="0.515086093820052,0.570952247318111" Stretch="Fill" Width="36.646" Canvas.Left="0.801">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="0.997" ScaleX="1.003"/>
+                                    <SkewTransform AngleY="1.458"/>
+                                    <RotateTransform Angle="0.186"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path x:Name="ptBocaR" Fill="#FFF3BCEE" Canvas.Top="12.025" Data="M13.827368,0.5 C18.659445,0.49999982 23.034071,1.9270921 26.200676,4.2343882 L26.344769,4.341913 26.244919,4.937558 C24.440256,15.263311 19.370548,22.700161 13.390226,22.70684 7.5271673,22.71339 2.5234027,15.576355 0.60712385,5.5701035 L0.5,4.9887322 0.59592152,4.9060734 C3.8044429,2.2072147 8.5422821,0.49999982 13.827368,0.5 z" Height="26.42" Canvas.Left="3.264" RenderTransformOrigin="0.515086093820052,0.570952247318111" Stretch="Fill" Width="32.449">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="0.997" ScaleX="1.003"/>
+                                    <SkewTransform AngleY="1.458"/>
+                                    <RotateTransform Angle="-0.877"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Canvas>
+                </Viewbox>
+                <Viewbox x:Name="vbDañar2" Stretch="Fill" Height="20.781" Canvas.Left="177.038" Canvas.Top="118.908" Width="20.513" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="4.347"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Grid Height="56.667" Width="55.667">
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="0.333,32.167,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167"/>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="31.5,32,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Margin="31.333,0.667,0,0" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="-1" ScaleX="-1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                        <Path Data="M0,0 L24.167,0 24.167,24.5 17.167,24.5 17.167,6.1670002 0,6.1670002 z" Fill="#FFC31414" HorizontalAlignment="Left" Height="24.5" Stretch="Fill" VerticalAlignment="Top" Width="24.167" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                                    <SkewTransform AngleY="0" AngleX="0"/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+
+                    </Grid>
+                </Viewbox>
+                <Ellipse x:Name="ptBocaAtaqueOjos" Fill="Black" Height="11" Canvas.Left="93.535" Canvas.Top="139.231" Width="23.837" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="14.665"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse x:Name="ptBocaAtaqueNaranja" Fill="Black" Height="3.366" Canvas.Left="94.858" Canvas.Top="143.463" Width="18.393" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="13.27"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Viewbox x:Name="vbBocaAtaqueLuna" Height="24.403" Canvas.Left="81.878" Canvas.Top="135.152" Width="43.893" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="15.207"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Grid Height="22.952" Width="43.921" RenderTransformOrigin="0.5,0.5">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-14.346"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Ellipse Fill="Black" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="0.471,0,0,0">
+                            <Ellipse.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="14.672"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Ellipse.RenderTransform>
+                        </Ellipse>
+                        <Path Fill="#FFBF4141" Stroke="Black" Data="M26.755297,0.5 C40.056056,0.49999976 51.231947,4.1593935 54.399687,9.1117189 L54.495711,9.2700012 54.499999,9.4519079 C54.499999,14.582116 49.53895,19.09005 42.052725,21.66756 L41.963088,21.697611 41.55588,21.799856 C37.240267,22.85461 32.174124,23.462 26.755297,23.462 23.306952,23.462 20.001431,23.216032 16.941256,22.765335 L16.523598,22.699096 15.794383,22.522051 C6.7448411,20.180292 0.5,15.207751 0.5,9.4519079 0.5,8.7011459 0.60624504,7.9637101 0.81110048,7.2437007 L0.83389044,7.1698296 1.0269473,7.0035117 C5.6366587,3.1554449 15.425021,0.49999976 26.755297,0.5 z" RenderTransformOrigin="0.486459974769072,0.499999997253838" Stretch="Fill" Margin="0.726,6.809,1.914,1.252">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="14.672"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </Viewbox>
+            </Canvas>
+            <Path x:Name="ptEstrella" Fill="#FFF7EF47" Data="M54.970848,0.5 L72.419479,26.506846 107.481,26.506846 107.481,26.862526 90.216499,53.032963 108.35509,80.068186 108.35786,80.423853 71.959961,80.707186 54.717743,106.84384 52.243427,106.84384 35.190037,80.993418 1.3800971,81.256605 1.3652948,79.35507 17.598166,54.326735 0.5,28.408436 0.5,26.506846 35.641583,26.506846 52.496605,0.51926041 z" Height="55.12" RenderTransformOrigin="0.49597246943593,0.621138048769766" Stretch="Fill" Width="51.061" Canvas.Left="69.516" Canvas.Top="89.504" Visibility="Collapsed" UseLayoutRounding="False">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="-0.223"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="ptEstrella2" Fill="#FFF7B747" Data="M54.970848,0.5 L72.419479,26.506846 107.481,26.506846 107.481,26.862526 90.216499,53.032963 108.35509,80.068186 108.35786,80.423853 71.959961,80.707186 54.717743,106.84384 52.243427,106.84384 35.190037,80.993418 1.3800971,81.256605 1.3652948,79.35507 17.598166,54.326735 0.5,28.408436 0.5,26.506846 35.641583,26.506846 52.496605,0.51926041 z" Height="28.027" RenderTransformOrigin="0.49597246943593,0.621138048769766" Stretch="Fill" Width="27.166" Canvas.Left="102.476" Canvas.Top="144.114" Visibility="Collapsed" UseLayoutRounding="False">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="-0.223"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Image x:Name="imgFuego" Source="/imagenesOso/fuegoNoF.png" Canvas.Left="58" Canvas.Top="66" Visibility="Collapsed" Height="80" Width="108">
+
+            </Image>
+            <Viewbox x:Name="vbBocaAtaqueGarras" Stretch="Fill" Height="23.62" Canvas.Left="190.564" Canvas.Top="155.229" Width="39.816" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Viewbox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="6.194"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Viewbox.RenderTransform>
+                <Grid Height="20.429" Width="24.668">
+                    <Ellipse Fill="Black" HorizontalAlignment="Left" Height="16.074" Margin="0.168,4.355,0,0" Stroke="Black" VerticalAlignment="Top" Width="24.5"/>
+                    <Path HorizontalAlignment="Left" VerticalAlignment="Top" Data="M0,0 L0.35570068,0.14347363 C2.2142282,0.90136433 4.2652705,1.8606443 6.4162372,2.9861097 L6.5173543,3.039731 0,3.039731 z" Height="3.04" Margin="0,0.889,0,0" RenderTransformOrigin="0.66491702278978,-1.30283533010875" Stretch="Fill" Width="6.517">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-50"/>
+                                <RotateTransform Angle="-67.485"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                        <Path.Fill>
+                            <SolidColorBrush Color="White" Opacity="0.9"/>
+                        </Path.Fill>
+                    </Path>
+                    <Path HorizontalAlignment="Left" VerticalAlignment="Top" Data="M0,0 L0.32554438,0.23878098 C2.1652805,1.5969515 3.7595405,2.9060688 5.0456788,4.1052599 L5.2130906,4.2629175 0,4.2629175 z" Height="4.263" Margin="12.668,0,0,0" RenderTransformOrigin="0.831272753839648,-0.642067895855765" Stretch="Fill" Width="5.213">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-50"/>
+                                <RotateTransform Angle="-66.558"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                        <Path.Fill>
+                            <SolidColorBrush Color="White" Opacity="0.9"/>
+                        </Path.Fill>
+                    </Path>
+                    <Path Data="M11.492547,0.5 C16.460951,0.49999988 20.70912,2.4780287 22.427527,5.2733716 L22.485093,5.3705 22.427527,5.4676279 C20.70912,8.2629708 16.460951,10.241 11.492547,10.241 6.5241408,10.241 2.2759721,8.2629708 0.55756569,5.4676279 L0.5,5.3705 0.55756569,5.2733716 C2.2759721,2.4780287 6.5241408,0.49999988 11.492547,0.5 z" Fill="#FFDC3F3F" HorizontalAlignment="Left" Height="10.741" Margin="0.925,9.688,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="22.986"/>
+
+                </Grid>
+            </Viewbox>
+            <Viewbox x:Name="vbTirita" Stretch="Fill" Height="5.574" Canvas.Left="142.5" Canvas.Top="88.426" Width="29" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Viewbox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-60.42"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Viewbox.RenderTransform>
+                <Grid Height="5.57400000000001" Width="29">
+                    <Rectangle Fill="White" HorizontalAlignment="Left" Height="5.574" Stroke="Black" VerticalAlignment="Top" Width="29"/>
+                    <Rectangle Fill="White" HorizontalAlignment="Left" Height="5.574" Stroke="Black" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.5,0.5">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="51.836"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+
+                </Grid>
+            </Viewbox>
+            <Viewbox x:Name="vbBocaAtaqueLaser" Stretch="Fill" Height="23.24" Canvas.Left="192" Canvas.Top="158.426" Width="35.333" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Viewbox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="5.649"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Viewbox.RenderTransform>
+                <Grid Height="23.24" Width="35.333">
+                    <Path Data="M17.6665,0.5 C27.147297,0.49999973 34.833,6.2994794 34.833,13.4535 34.833,15.130223 34.410812,16.73254 33.642273,18.203222 L33.576878,18.323999 33.314701,18.323999 33.275326,18.41456 C32.112541,20.86379 25.539055,22.74 17.604,22.74 9.6689453,22.74 3.0954604,20.86379 1.9326737,18.41456 L1.8933002,18.323999 1.7561215,18.323999 1.6907256,18.203222 C0.92218834,16.73254 0.5,15.130223 0.5,13.4535 0.5,6.2994794 8.1857042,0.49999973 17.6665,0.5 z" Fill="Black" HorizontalAlignment="Left" Height="23.24" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="35.333"/>
+                    <Ellipse Fill="#FFC54545" HorizontalAlignment="Left" Height="11.205" Margin="1.25,12.035,0,0" Stroke="Black" VerticalAlignment="Top" Width="32.708"/>
+
+                </Grid>
+            </Viewbox>
+            <Viewbox x:Name="vbTirita2" Stretch="Fill" Height="5.574" Canvas.Left="222.5" Canvas.Top="234.426" Width="29" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Viewbox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-5.583"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Viewbox.RenderTransform>
+                <Grid Height="5.57400000000001" Width="29">
+                    <Rectangle Fill="White" HorizontalAlignment="Left" Height="5.574" Stroke="Black" VerticalAlignment="Top" Width="29"/>
+                    <Rectangle Fill="White" HorizontalAlignment="Left" Height="5.574" Stroke="Black" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.5,0.5">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="51.836"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+
+                </Grid>
+            </Viewbox>
+            <Image x:Name="imgXroja1" Source="/imagenesOso/xRojaNoF.png" Canvas.Left="162.379" Canvas.Top="113.551" Height="38" Width="51.133" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="7.758"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="imgXroja2" Source="/imagenesOso/xRojaNoF.png" Canvas.Left="222.879" Canvas.Top="125.051" Height="38" Width="51.133" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="12.521"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+
+            </Image>
+            <Ellipse x:Name="ptBocaDerrota" Fill="Black" Height="1.5" Canvas.Left="202.145" Stroke="Black" Canvas.Top="166.434" Width="15.25" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="12.702"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Canvas>
+        <Image x:Name="imgAtacar" Grid.Column="7" Margin="2,2,2,0" Source="/imagenesOso/espadaNoF.png" Grid.Row="2" Visibility="Collapsed"/>
+        <Button x:Name="btnEscudo" Content="Escudo" Margin="10,194,18,0" Grid.Row="3" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="Black" Foreground="Black" Click="bajarEscudo" FontFamily="Segoe UI" FontStyle="Normal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" Visibility="Collapsed" />
+        <Button x:Name="btnAtaqueOjos" Content="Ojos" Margin="10,150,10,0" Grid.Row="3" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="#FF4AE242" Foreground="Black" Click="ataqueOjos" FontFamily="Segoe UI" FontStyle="Normal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" BorderThickness="6,6,6,6" />
+        <Button x:Name="btnAtaqueLuna" Content="Luna" Margin="10,108,10,0" Grid.Row="3" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="#FF4AE242" Foreground="Black" Click="ataqueLuna" FontFamily="Segoe UI" FontStyle="Normal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" BorderThickness="6,6,6,6" />
+        <Button x:Name="btnAtaqueNaranja" Content="Fuego" Margin="10,65,10,0" Grid.Row="3" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="#FFEEEE00" Foreground="Black" Click="ataqueNaranja" FontFamily="Segoe UI" FontStyle="Normal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" BorderThickness="6,6,6,6" />
+        <Button x:Name="btnAtaqueOjosLaser" Content="Láser" Margin="10,23,10,0" Grid.Row="3" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="#FF4AE242" Foreground="Black" Click="ataqueOjosLaser" FontFamily="Segoe UI" FontStyle="Normal" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="Bold" BorderThickness="6,6,6,6" />
+        <Button x:Name="btnAtaqueGarras" Content="Garras" Margin="10,17,10,0" Grid.Row="2" Background="#FFB9FFFB" RenderTransformOrigin="0,0" BorderBrush="Red" Foreground="Black" Click="ataqueGarras" FontFamily="Segoe UI" FontStyle="Normal" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" FontWeight="Bold" BorderThickness="6,6,6,6" />
+        <Image x:Name="imgEscudo2" Margin="-2,3,1,24" Grid.Row="3" Source="/imagenesOso/escudoNoF.png" Grid.ColumnSpan="8" RenderTransformOrigin="0.5,0.5" Opacity="0.8" Grid.RowSpan="3" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.347"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+
+        </Image>
+        <Image x:Name="imgGarras" Margin="20,46,20,57" Grid.Row="3" Source="/imagenesOso/garrasNoF.png" Grid.ColumnSpan="5" RenderTransformOrigin="0.5,0.5" Opacity="0.7" Visibility="Collapsed" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-33.506"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+
+        </Image>
+        <Viewbox x:Name="vbPerder" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="Collapsed" Grid.Column="4" Margin="4,133,0,0" Grid.Row="3">
+            <Grid Height="469" Width="492">
+                <Image x:Name="imgPerder" Margin="0" Source="/imagenesOso/finJuego.jpg" RenderTransformOrigin="0.5,0.5" Opacity="0.9">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.347"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+
+                </Image>
+                <Image x:Name="imgReintentar" HorizontalAlignment="Stretch" Margin="211,330.574,213,73.426" VerticalAlignment="Stretch" Source="/imagenesOso/reintentarNoF.png" Width="65" Height="65" />
+
+            </Grid>
+        </Viewbox>
+        <Image x:Name="imgChinchetaOso" Grid.Column="6" Grid.Row="4" PointerPressed="pinOso" Source="/img/chinchetaNoF.png" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="49,1,2,4" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgPiedraOso" Grid.Row="4" PointerPressed="NotificacionSubida" Source="/imagenesOso/piedraOso_evNoF.png" RenderTransformOrigin="0.5,0.5" Margin="-17,11,55,7" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="tbTurno" Text="¡Es tu turno!" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Visibility="Collapsed" Grid.Column="2" Margin="52,0,0,-6" Grid.Row="5" Grid.ColumnSpan="3"/>
+    </Grid>
+</UserControl>

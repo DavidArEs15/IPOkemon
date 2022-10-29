@@ -1,0 +1,68 @@
+﻿<Page x:Name="Pokedex"
+    x:Class="Lab5.PokedexPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FocusVisualPrimaryBrush="{x:Null}">
+
+    <Grid Background="#FFD4EEFF">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imgFondo1" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/img/pkd1.jpg" Height="266" Width="1066" Stretch="Fill" Opacity="0.6"/>
+        <local:MUCPokemonOso x:Name="mucTeddiursa" Margin="11,-8,0,0" Height="378" Width="497" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="0,26,0,0"/>
+        <Image x:Name="imgFondo2" HorizontalAlignment="Left" Margin="-4,492,0,0" VerticalAlignment="Top" Source="/img/pkd1.jpg" Height="266" Width="1070" Stretch="Fill" Opacity="0.6" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="180.302"/>
+            </Image.RenderTransform>
+        </Image>
+        <local:MUCPokemonSableye x:Name="mucSableye" HorizontalAlignment="Left" Margin="508,12,0,0" VerticalAlignment="Top"/>
+        <local:MUCCastform x:Name="mucCastform" HorizontalAlignment="Left" Margin="16,363,0,0" VerticalAlignment="Top" Height="331" Width="468"/>
+        <local:MUCPinguino x:Name="mucPiplup" HorizontalAlignment="Left" Margin="541,347,0,0" VerticalAlignment="Top" Height="347" Width="464"/>
+        <Button x:Name="btnInfoOso" Content="" Margin="445,266,0,0" VerticalAlignment="Top" Height="47" Width="55" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="btnInfoOso_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/img/libro.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnInfoSableye" Content="" Margin="979,248,0,0" VerticalAlignment="Top" Height="47" Width="55" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="btnInfoSableye_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/img/libro.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnInfoCastform" Content="" Margin="432,593,0,0" VerticalAlignment="Top" Height="47" Width="55" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="btnInfoCastform_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/img/libro.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnInfoPiplup" Content="" Margin="955,582,0,0" VerticalAlignment="Top" Height="47" Width="55" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="btnInfoPiplup_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/img/libro.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="tbTeddiursa" HorizontalAlignment="Left" Margin="209,363,0,0" Text="Teddiursa" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#FF894E12"/>
+        <TextBlock x:Name="tbSableye" HorizontalAlignment="Left" Margin="737,354,0,0" Text="Sableye" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#FF34126C"/>
+        <TextBlock x:Name="tbCastform" HorizontalAlignment="Left" Margin="232,683,0,0" Text="Castform" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="White"/>
+        <TextBlock x:Name="tbPiplup" HorizontalAlignment="Left" Margin="750,683,0,0" Text="Piplup" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Foreground="#FF88D4FF"/>
+        <Image HorizontalAlignment="Left" Height="71" Margin="414,10,0,0" VerticalAlignment="Top" Width="238" Source="/img/textoPokedex2.png"/>
+        <Image x:Name="imgAumentar" HorizontalAlignment="Left" Height="69" Margin="942,28,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgAumentar.png" PointerReleased="imgAumentar_PointerReleased"/>
+        <Image x:Name="imgDisminuir" HorizontalAlignment="Left" Height="72" Margin="942,16,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgDisminuir.png" Visibility="Collapsed" PointerReleased="imgDisminuir_PointerReleased"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D14C93E3-15AF-4403-B934-6D911CD9C206}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lab5</RootNamespace>
+    <AssemblyName>Lab5</AssemblyName>
+    <DefaultLanguage>es-ES</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaMain.xaml.cs">
+      <DependentUpon>AyudaMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CombatePokemon.xaml.cs">
+      <DependentUpon>CombatePokemon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCastform.xaml.cs">
+      <DependentUpon>InfoCastform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPiplup.xaml.cs">
+      <DependentUpon>InfoPiplup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSableye.xaml.cs">
+      <DependentUpon>InfoSableye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTeddiursa.xaml.cs">
+      <DependentUpon>InfoTeddiursa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ManualJuego.xaml.cs">
+      <DependentUpon>ManualJuego.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MUCCastform.xaml.cs">
+      <DependentUpon>MUCCastform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MUCPinguino.xaml.cs">
+      <DependentUpon>MUCPinguino.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MUCPokemonOso.xaml.cs">
+      <DependentUpon>MUCPokemonOso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MUCPokemonSableye.xaml.cs">
+      <DependentUpon>MUCPokemonSableye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PokedexPage.xaml.cs">
+      <DependentUpon>PokedexPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PokemonCombateIndividual.xaml.cs">
+      <DependentUpon>PokemonCombateIndividual.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="imagenesCastform\102-1021879_iconos-y-figuras-de-amor-icono-de-corazon-removebg-preview.png" />
+    <Content Include="imagenesCastform\castform.png" />
+    <Content Include="imagenesCastform\castformEvolucionNoF.png" />
+    <Content Include="imagenesCastform\castformGanar.png" />
+    <Content Include="imagenesCastform\castformGanar2.png" />
+    <Content Include="imagenesCastform\castformNoF.png" />
+    <Content Include="imagenesCastform\escudo.png" />
+    <Content Include="imagenesCastform\fondoCastform.png" />
+    <Content Include="imagenesCastform\fondoCastform2.png" />
+    <Content Include="imagenesCastform\ganaCastform.JPG" />
+    <Content Include="imagenesCastform\ganaCastform.png" />
+    <Content Include="imagenesCastform\new_fondo.PNG" />
+    <Content Include="imagenesCastform\piedraGris_evNoF.png" />
+    <Content Include="imagenesCastform\pngwing.com.png" />
+    <Content Include="imagenesOso\Corazón.png" />
+    <Content Include="imagenesOso\escudo.jpg" />
+    <Content Include="imagenesOso\escudoNoF.png" />
+    <Content Include="imagenesOso\espada.png" />
+    <Content Include="imagenesOso\espadaNoF.png" />
+    <Content Include="imagenesOso\espiral.png" />
+    <Content Include="imagenesOso\espiralNoF.png" />
+    <Content Include="imagenesOso\finJuego.jpg" />
+    <Content Include="imagenesOso\fondo.jpg" />
+    <Content Include="imagenesOso\fondoTeddiursa.png" />
+    <Content Include="imagenesOso\fuego.png" />
+    <Content Include="imagenesOso\fuegoNoF.png" />
+    <Content Include="imagenesOso\ganaOso.JPG" />
+    <Content Include="imagenesOso\garras.png" />
+    <Content Include="imagenesOso\garrasNoF.png" />
+    <Content Include="imagenesOso\miel.png" />
+    <Content Include="imagenesOso\miel2.png" />
+    <Content Include="imagenesOso\oso.jpg" />
+    <Content Include="imagenesOso\oso.png" />
+    <Content Include="imagenesOso\osoEvolucionNoF.png" />
+    <Content Include="imagenesOso\osoNoF.png" />
+    <Content Include="imagenesOso\piedraOso_evNoF.png" />
+    <Content Include="imagenesOso\pocima.jpg" />
+    <Content Include="imagenesOso\pocimaNoF.png" />
+    <Content Include="imagenesOso\reintentar.jpg" />
+    <Content Include="imagenesOso\reintentarNoF.png" />
+    <Content Include="imagenesOso\teddiursaGanar.png" />
+    <Content Include="imagenesOso\xRoja.png" />
+    <Content Include="imagenesOso\xRojaNoF.png" />
+    <Content Include="imagenesPinguino\corazon2.png" />
+    <Content Include="imagenesPinguino\emoticonoHerido2.png" />
+    <Content Include="imagenesPinguino\escudo3.png" />
+    <Content Include="imagenesPinguino\fondoPiplup.png" />
+    <Content Include="imagenesPinguino\fondoPiplup2.png" />
+    <Content Include="imagenesPinguino\ganaPiplup.JPG" />
+    <Content Include="imagenesPinguino\ganaPiplup.png" />
+    <Content Include="imagenesPinguino\paisaje.jpg" />
+    <Content Include="imagenesPinguino\piedraPinguino_evNoF.png" />
+    <Content Include="imagenesPinguino\piplup.png" />
+    <Content Include="imagenesPinguino\piplupEvolucionNoF.png" />
+    <Content Include="imagenesPinguino\piplupGanar.png" />
+    <Content Include="imagenesPinguino\piplupNoF.png" />
+    <Content Include="imagenesPinguino\pocima3.png" />
+    <Content Include="imagenesSableye\corazonPokemon.png" />
+    <Content Include="imagenesSableye\enfado.png" />
+    <Content Include="imagenesSableye\escudopokemon.png" />
+    <Content Include="imagenesSableye\fondo.jpg" />
+    <Content Include="imagenesSableye\fondoSableye.png" />
+    <Content Include="imagenesSableye\ganaSableye.JPG" />
+    <Content Include="imagenesSableye\ganaSableye.png" />
+    <Content Include="imagenesSableye\piedraMorado_evNoF.png" />
+    <Content Include="imagenesSableye\pociondevidaPokemon.png" />
+    <Content Include="imagenesSableye\pokebola.png" />
+    <Content Include="imagenesSableye\sableye.png" />
+    <Content Include="imagenesSableye\sableyeEvolucionNoF.png" />
+    <Content Include="imagenesSableye\sableyeGanar.png" />
+    <Content Include="imagenesSableye\sableyeNoF.png" />
+    <Content Include="img\ayuda.png" />
+    <Content Include="img\ayudaTexto.png" />
+    <Content Include="img\ayudaTexto2.png" />
+    <Content Include="img\bolasPokemon.jpg" />
+    <Content Include="img\botonesEsp.png" />
+    <Content Include="img\botonesIngles.png" />
+    <Content Include="img\castformPerder.png" />
+    <Content Include="img\celebi.png" />
+    <Content Include="img\chinchetaNoF.png" />
+    <Content Include="img\copaGanar.png" />
+    <Content Include="img\english.png" />
+    <Content Include="img\flecha.png" />
+    <Content Include="img\flechaAtras.png" />
+    <Content Include="img\fondoBatalla.png" />
+    <Content Include="img\fondoCombate.png" />
+    <Content Include="img\fondoGanar.png" />
+    <Content Include="img\fondoPokemon1.jpg" />
+    <Content Include="img\funcionamiento.png" />
+    <Content Include="img\funcionamientoIngles.png" />
+    <Content Include="img\ganar.png" />
+    <Content Include="img\help.png" />
+    <Content Include="img\homeIcono.png" />
+    <Content Include="img\iconoAp.png" />
+    <Content Include="img\imagenIpokemon.png" />
+    <Content Include="img\imagenMenu.png" />
+    <Content Include="img\imgAumentar.png" />
+    <Content Include="img\imgDisminuir.png" />
+    <Content Include="img\individual.png" />
+    <Content Include="img\jugador1.png" />
+    <Content Include="img\jugador2.png" />
+    <Content Include="img\jugadorMaquina.png" />
+    <Content Include="img\libro.png" />
+    <Content Include="img\mando.png" />
+    <Content Include="img\manual.png" />
+    <Content Include="img\manualCombate.png" />
+    <Content Include="img\manualCombateIngles.png" />
+    <Content Include="img\multijugador.png" />
+    <Content Include="img\multiplayer.png" />
+    <Content Include="img\onePlayer.png" />
+    <Content Include="img\osoPerder.png" />
+    <Content Include="img\pikachuDuda.png" />
+    <Content Include="img\piplupPerder.png" />
+    <Content Include="img\piplupPok.png" />
+    <Content Include="img\pkd1.jpg" />
+    <Content Include="img\pkd2.jpg" />
+    <Content Include="img\pokDitto.png" />
+    <Content Include="img\pokedex.png" />
+    <Content Include="img\rayo.png" />
+    <Content Include="img\sableyePerder.png" />
+    <Content Include="img\sableyePok.png" />
+    <Content Include="img\spain.png" />
+    <Content Include="img\teddiursa.jpg" />
+    <Content Include="img\teddiursaPok.png" />
+    <Content Include="img\textHelp.png" />
+    <Content Include="img\textoPokedex.png" />
+    <Content Include="img\textoPokedex2.png" />
+    <Content Include="img\tipoAgua.png" />
+    <Content Include="img\tipoFantasma.png" />
+    <Content Include="img\tipoNormal.png" />
+    <Content Include="img\tipoSiniestro.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AyudaMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CombatePokemon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoCastform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoPiplup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoSableye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoTeddiursa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ManualJuego.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MUCCastform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MUCPinguino.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MUCPokemonOso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MUCPokemonSableye.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PokedexPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PokemonCombateIndividual.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.13</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Extensions">
+      <Version>4.3.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

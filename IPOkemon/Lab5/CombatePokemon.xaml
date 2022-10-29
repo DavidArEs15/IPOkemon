@@ -1,0 +1,72 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="Lab5.CombatePokemon"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.FocusVisualPrimaryBrush>
+            <ImageBrush/>
+        </Grid.FocusVisualPrimaryBrush>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/fondoCombate.png" Opacity="0.7"/>
+        </Grid.Background>
+        <Image x:Name="fondo" Margin="-165,-2,-164,0" Source="/img/fondoCombate.png" Stretch="Uniform" Opacity="0.7" Visibility="Collapsed"/>
+
+        <TextBlock x:Name="tbTítuloMultijugador" HorizontalAlignment="Center" Margin="0,22,0,0" Text="Combate Multijugador" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White"/>
+        <Image x:Name="imgSableye" HorizontalAlignment="Left" Height="220" Margin="670,390,0,0" VerticalAlignment="Top" Width="261" Source="/img/sableyePok.png" PointerReleased="sableyeSeleccionado"/>
+        <Image x:Name="imgOso" HorizontalAlignment="Left" Height="196" Margin="704,137,0,0" VerticalAlignment="Top" Width="168" Source="/img/teddiursaPok.png" PointerReleased="teddiursaSeleccionado"/>
+        <Image x:Name="imgCastform" HorizontalAlignment="Left" Height="202" Margin="172,395,0,0" VerticalAlignment="Top" Width="202" Source="/imagenesCastform/castformNoF.png" PointerReleased="castformSeleccionado"/>
+        <Image x:Name="imgPiplup" HorizontalAlignment="Left" Height="175" Margin="180,148,0,0" VerticalAlignment="Top" Width="185" Source="/img/piplupPok.png" PointerReleased="piplupSeleccionado"/>
+        <TextBlock x:Name="tbSableye" HorizontalAlignment="Left" Margin="714,597,0,0" Text="Sableye" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White"/>
+        <TextBlock x:Name="tbCastform" HorizontalAlignment="Left" Margin="198,597,0,0" Text="Castform" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White"/>
+        <TextBlock x:Name="tbPiplup" HorizontalAlignment="Left" Margin="219,318,0,0" Text="Piplup" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White" Width="Auto" Height="Auto"/>
+        <TextBlock x:Name="tbTeddiursa" HorizontalAlignment="Left" Margin="704,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White" Width="Auto" Height="Auto"><Run Text="Te"/><Run Text="d"/><Run Text="diursa"/></TextBlock>
+        <TextBlock x:Name="tbSleccionarMultijugador1" HorizontalAlignment="Left" Margin="58,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" SelectionChanged="tbSleccionar_SelectionChanged" Text="Jugador 1 selecciona tu pokémon:" Foreground="White" Height="Auto"/>
+        <local:MUCPokemonSableye x:Name="mucSableye" HorizontalAlignment="Left" Margin="-580,190,0,0" VerticalAlignment="Top" Visibility="Collapsed" Height="339" Width="525"/>
+        <local:MUCPinguino x:Name="mucPiplup" HorizontalAlignment="Left" Margin="-524,191,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <local:MUCPokemonOso x:Name="mucTeddiursa" HorizontalAlignment="Left" Margin="-554,191,0,0" VerticalAlignment="Top" Height="396" Visibility="Collapsed"/>
+        <local:MUCCastform x:Name="mucCastform" HorizontalAlignment="Left" Margin="-565,189,0,0" VerticalAlignment="Top" Height="340" Width="508" Visibility="Collapsed"/>
+        <TextBlock x:Name="tbSleccionarMultijugador2" HorizontalAlignment="Left" Margin="58,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" SelectionChanged="tbSleccionar_SelectionChanged" Text="Jugador 2 selecciona tu pokémon:" Foreground="White" Visibility="Collapsed" Height="Auto"/>
+        <Image x:Name="imgJugador1" HorizontalAlignment="Left" Height="100" Margin="798,566,0,0" VerticalAlignment="Top" Width="100" Source="/img/jugador1.png" Visibility="Collapsed" Opacity="0.75"/>
+        <Image x:Name="imgJugador2" HorizontalAlignment="Left" Height="100" Margin="208,566,0,0" VerticalAlignment="Top" Width="100" Source="/img/jugador2.png" Visibility="Collapsed" Opacity="0.75"/>
+        <Button x:Name="btnJugarMultijugador" Content="Jugar" Margin="331,343,0,0" VerticalAlignment="Top" Background="#FF7BE2DD" FontSize="25" FontWeight="Bold" Click="empezarJuego" Visibility="Collapsed" Height="121" Width="172"/>
+        <Button x:Name="btnSelecPokMultijugador" Content="  Volver a &#xD;&#xA;seleccionar" Margin="534,345,0,0" VerticalAlignment="Top" Background="#FF7BE2DD" FontSize="25" FontWeight="Bold" Click="volverSeleccionar" Visibility="Collapsed" Height="119" Width="195"/>
+        <TextBlock x:Name="tbEleccionMultijugador" HorizontalAlignment="Left" Margin="405,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White" Text="¿Qué desea hacer?" Visibility="Collapsed"/>
+        <TextBlock x:Name="tbTítuloMultijugadorIngles" HorizontalAlignment="Center" Margin="0,22,0,0" Text="Multiplayer Combat" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="48" Foreground="White" Visibility="Collapsed" Width="Auto" Height="Auto"/>
+        <TextBlock x:Name="tbSleccionarMultijugadorIngles1" HorizontalAlignment="Left" Margin="58,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" SelectionChanged="tbSleccionar_SelectionChanged" Text="Player 1 select your pokemon:" Foreground="White" Visibility="Collapsed" Height="Auto"/>
+        <TextBlock x:Name="tbSleccionarMultijugadorIngles2" HorizontalAlignment="Left" Margin="58,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" SelectionChanged="tbSleccionar_SelectionChanged" Text="Player 2 select your pokemon:" Foreground="White" Visibility="Collapsed" Height="Auto"/>
+        <TextBlock x:Name="tbEleccionMultijugadorIngles" HorizontalAlignment="Left" Margin="342,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="White" Text="¿What do you want to do?" Visibility="Collapsed"/>
+        <Button x:Name="btnJugarMultijugadorIngles" Content="Play" Margin="347,343,0,0" VerticalAlignment="Top" Background="#FF7BE2DD" FontSize="25" FontWeight="Bold" Click="empezarJuego" Visibility="Collapsed" Height="103" Width="148"/>
+        <Button x:Name="btnSelecPokMultijugadorIngles" Content=" Select&#xA; again" Margin="552,345,0,0" VerticalAlignment="Top" Background="#FF7BE2DD" FontSize="25" FontWeight="Bold" Click="volverSeleccionar" Visibility="Collapsed" Height="101" Width="152"/>
+        <Image x:Name="ganaSableye" HorizontalAlignment="Left" Height="1123" VerticalAlignment="Top" Width="1143" Source="/imagenesSableye/ganaSableye.png" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Margin="0,0,0,0">
+            <Image.RenderTransform>
+                <CompositeTransform SkewY="0.075" TranslateY="0.749"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="ganaPiplup" HorizontalAlignment="Center" Height="1123" VerticalAlignment="Top" Width="1143" Source="/imagenesPinguino/ganaPiplup.JPG" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform SkewY="0.075" TranslateY="0.749"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="ganaCastform" HorizontalAlignment="Center" Height="1123" VerticalAlignment="Top" Width="1143" Source="/imagenesCastform/ganaCastform.png" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform SkewY="0.075" TranslateY="0.749"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="ganaOso" HorizontalAlignment="Center" Height="1123" VerticalAlignment="Top" Width="1143" Source="/imagenesOso/ganaOso.JPG" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform SkewY="0.075" TranslateY="0.749"/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="btnRepetir" Content="Combatir de nuevo" Margin="684,665,0,0" VerticalAlignment="Top" Click="btnRepetir_Click" Background="#FF90D4D8" FontWeight="Bold" Visibility="Collapsed" BorderBrush="Black" Height="57" Width="342" FontSize="25"/>
+        <Image x:Name="imgAumentar" HorizontalAlignment="Left" Height="69" Margin="942,28,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgAumentar.png" PointerReleased="imgAumentar_PointerReleased"/>
+        <Image x:Name="imgDisminuir" HorizontalAlignment="Left" Height="72" Margin="942,16,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgDisminuir.png" Visibility="Collapsed" PointerReleased="imgDisminuir_PointerReleased"/>
+
+    </Grid>
+</Page>

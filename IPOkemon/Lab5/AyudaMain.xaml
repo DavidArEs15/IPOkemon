@@ -1,0 +1,37 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="Lab5.AyudaMain"
+    mc:Ignorable="d"
+    Background="#FFDEEDFF" Loaded="Page_Loaded">
+
+    <Grid>
+        <TextBlock x:Name="tbPokedexAyuda" HorizontalAlignment="Left" Margin="26,206,0,0" Text="¡Aquí podrás ver todos los pokemon que has capturado hasta el momento! Además, pulsando la piedra evolutiva podrás evolucionar al pokemon, y mediante la chincheta podrás fijar tu pokemon favorito en tu menú Windows para acceder directamente a la aplicación a través de su imagen. Por último, si pulsas el icono del libro podrás ver la información detallada del pokemon correspondiente." TextWrapping="Wrap" VerticalAlignment="Top" Width="1034" FontSize="17" FontWeight="Bold"/>
+        <Image x:Name="imgTextoAyuda" HorizontalAlignment="Left" Height="100" Margin="405,19,0,0" VerticalAlignment="Top" Width="277" Source="/img/ayudaTexto2.png"/>
+        <Image x:Name="imgPikachu" HorizontalAlignment="Left" Height="238" Margin="785,516,0,0" VerticalAlignment="Top" Width="338" Source="/img/pikachuDuda.png" Opacity="0.8"/>
+        <Image x:Name="imgMando1" HorizontalAlignment="Left" Height="54" Margin="325,45,0,0" VerticalAlignment="Top" Width="64" Source="/img/mando.png" Opacity="0.45"/>
+        <Image x:Name="imgMando2" HorizontalAlignment="Left" Height="54" Margin="681,45,0,0" VerticalAlignment="Top" Width="64" Source="/img/mando.png" Opacity="0.45"/>
+        <Image x:Name="imgDitto" HorizontalAlignment="Left" Height="168" Margin="2,-36,0,0" VerticalAlignment="Top" Width="238" Source="/img/pokDitto.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Opacity="0.75">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="179.853"/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="tbMultijugadorAyuda" HorizontalAlignment="Left" Margin="24,414,0,0" Text="¡Disfruta de emocionantes combates pokemon con tus amigos! Cada jugador seleccionará el pokemon con el que desee luchar pulsando en su icono, y a continuación, pulsando Jugar podrán combatir por turnos. Al finalizar, se mostrará el ganador del combate y se dará la opción de combatir de nuevo." TextWrapping="Wrap" VerticalAlignment="Top" Height="131" Width="1043" FontSize="17" FontWeight="Bold"/>
+        <TextBlock x:Name="tbIndividualAyuda" HorizontalAlignment="Left" Margin="26,593,0,0" Text="¡Conviértete en un maestro pokemon! Elige tu pokemon pulsando en su icono, selecciona a tu contrincante y pulsa Jugar para que empiece un combate por turnos contra la máquina, de manera que puedas jugar tu solo contra nuestra IA. Finalmente, se mostrará al pokemon ganador y se dará la opción de combatir de nuevo." TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="859" FontSize="17" FontWeight="Bold"/>
+        <Image x:Name="imgPokedex" HorizontalAlignment="Left" Height="55" Margin="26,151,0,0" VerticalAlignment="Top" Width="188" Source="/img/pokedex.png"/>
+        <Image x:Name="imgMultijugador" HorizontalAlignment="Left" Height="57" Margin="22,351,0,0" VerticalAlignment="Top" Width="501" Source="/img/multijugador.png"/>
+        <Image x:Name="imgIndividual" HorizontalAlignment="Left" Height="54" Margin="26,536,0,0" VerticalAlignment="Top" Width="419" Source="/img/individual.png"/>
+        <Image x:Name="imgMultiplayer" HorizontalAlignment="Left" Height="57" Margin="21,348,0,0" VerticalAlignment="Top" Width="501" Source="/img/multiplayer.png" Visibility="Collapsed"/>
+        <Image x:Name="imgOnePlayer" HorizontalAlignment="Left" Height="54" Margin="27,533,0,0" VerticalAlignment="Top" Width="419" Source="/img/onePlayer.png" Visibility="Collapsed"/>
+        <Image x:Name="imgTextHelp" HorizontalAlignment="Left" Height="120" Margin="433,9,0,0" VerticalAlignment="Top" Width="232" Source="/img/textHelp.png" Visibility="Collapsed"/>
+        <TextBlock x:Name="tbPokedexAyudaIngles" HorizontalAlignment="Left" Margin="31,203,0,0" Text="Here you can see all the pokemon you have caught so far! Furthermore, by pressing the evolutionary stone you will be able to evolve the pokemon, and by means of the pushpin you will be able to pin your favorite pokemon in your Windows menu to directly access the application through its image. Finally, if you press the book icon you will be able to see the detailed information of the corresponding pokemon." TextWrapping="Wrap" VerticalAlignment="Top" Width="1024" FontSize="17" FontWeight="Bold" Visibility="Collapsed"/>
+        <TextBlock x:Name="tbMultijugadorAyudaIngles" HorizontalAlignment="Left" Margin="29,413,0,0" Text="Enjoy exciting pokemon battles with your friends! Each player will select the pokemon they want to fight by clicking on its icon, and then pressing Play they can fight in turns. At the end, the winner of the fight will be shown and the option to fight again will be given." TextWrapping="Wrap" VerticalAlignment="Top" Width="1026" FontSize="17" FontWeight="Bold" Visibility="Collapsed"/>
+        <TextBlock x:Name="tbIndividualAyudaIngles" HorizontalAlignment="Left" Margin="27,594,0,0" Text="Become a Pokemon Master! Choose your pokemon by clicking on its icon, select your opponent and press Play to start a turn-based battle against the machine, so you can play alone against our AI. Finally, the winning pokemon will be shown and the option to battle again will be given." TextWrapping="Wrap" VerticalAlignment="Top" Width="857" FontSize="17" FontWeight="Bold" Visibility="Collapsed"/>
+        <Image x:Name="imgAumentar" HorizontalAlignment="Left" Height="69" Margin="967,19,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgAumentar.png" PointerReleased="imgAumentar_PointerReleased"/>
+        <Image x:Name="imgDisminuir" HorizontalAlignment="Left" Height="72" Margin="967,7,0,0" VerticalAlignment="Top" Width="67" Source="/img/imgDisminuir.png" Visibility="Collapsed" PointerReleased="imgDisminuir_PointerReleased"/>
+    </Grid>
+</Page>
